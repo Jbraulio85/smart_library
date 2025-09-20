@@ -1,0 +1,312 @@
+[{
+  "_id": {
+    "$oid": "6842879285dec37de2b66b8d"
+  },
+  "name": "Taller III",
+  "description": "Informatica",
+  "image": "cat-1749190546615.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "6847bf1ecd2578c1847dc883"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "684287a485dec37de2b66b91"
+  },
+  "name": "Seminario",
+  "description": "Informatica",
+  "image": "cat-1749190564699.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "684287ac85dec37de2b66b95"
+  },
+  "name": "Practica",
+  "description": "Informatica",
+  "image": "cat-1749190572541.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "6842885885dec37de2b66b99"
+  },
+  "name": "Tecnologia III",
+  "description": "Informatica",
+  "image": "cat-1749190744410.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "6842885f85dec37de2b66b9d"
+  },
+  "name": "Fisica III",
+  "description": "Informatica",
+  "image": "cat-1749190751902.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "6842886485dec37de2b66ba1"
+  },
+  "name": "mate III",
+  "description": "Informatica",
+  "image": "cat-1749190756668.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "6842887185dec37de2b66ba5"
+  },
+  "name": "Psicologia",
+  "description": "Informatica",
+  "image": "cat-1749190769933.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "684288f285dec37de2b66ba9"
+  },
+  "name": "Biologia",
+  "description": "Informatica",
+  "image": "cat-1749190898587.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "684288f985dec37de2b66bad"
+  },
+  "name": "Quimica",
+  "description": "Informatica",
+  "image": "cat-1749190905606.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "6842899a85dec37de2b66bb1"
+  },
+  "name": "Ingles III",
+  "description": "Informatica",
+  "image": "cat-1749191066252.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "684289a385dec37de2b66bb5"
+  },
+  "name": "Etica",
+  "description": "Informatica",
+  "image": "cat-1749191075573.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "684290b885dec37de2b66bc6"
+    },
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "6842a0b085dec37de2b66c71"
+  },
+  "name": "Lenguaje",
+  "description": "Informatica",
+  "image": "cat-1749196976470.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [
+    {
+      "$oid": "6842989485dec37de2b66c27"
+    }
+  ],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+},
+{
+  "_id": {
+    "$oid": "6842a0b685dec37de2b66c75"
+  },
+  "name": "Artes\n",
+  "description": "Informatica",
+  "image": "cat-1749196982173.png",
+  "password": "IN6BV2",
+  "teacher": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "students": [],
+  "degree": {
+    "$oid": "68427d3b8d56cdc473fa3ae3"
+  },
+  "status": true,
+  "document": []
+}]

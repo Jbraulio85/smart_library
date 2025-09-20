@@ -1,0 +1,1309 @@
+{
+	"info": {
+		"_postman_id": "ab061d80-51c2-4322-968a-ad8603d3c79e",
+		"name": "virtualLibrary Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37585425"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Derian",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Hernández",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "RinTohsaka",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Samedirection14*",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dhernandez-2023346@kinal.org.gt",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "40191129",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/dshgo/Downloads/barca.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/virtualLibrary/v1/auth/verify/405057",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"auth",
+								"verify",
+								"405057"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Teacher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"RinTohsaka\",\r\n    \"password\": \"Samedirection14*\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/virtualLibrary/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"Admin1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/virtualLibrary/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"japenm\",\r\n    \"password\": \"Samedirection14*\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "Add Course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDUzMDEyNDgsImV4cCI6MTc0NTMwNDg0OH0.oHeQ4Dmj2VuiCw4Nsw_Lk9_BnX2JuerXGbQGbY1gkAI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Taller III",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Informatica",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/harol/Downloads/Messi.jpeg"
+								},
+								{
+									"key": "password",
+									"value": "IN6BV2",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/addCourse",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"addCourse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Courses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNGZlMzhlYjM2YTI3NGVhYzllMjgiLCJpYXQiOjE3NDUzMDI0NjUsImV4cCI6MTc0NTMwNjA2NX0.9ql1JtHfFecPl_bYjxLhxRZ22ghkRUlvbOtMQzsHaOg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/getCourses",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"getCourses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Course Pictures",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDUyMDE0NzYsImV4cCI6MTc0NTIwNTA3Nn0.PLtzWInh3HoX5RdnrpTDlTaN4VB3gT4Fs0_QC1PRDYw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/harol/Downloads/Messi.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/updateCoursePicture/6805729e73612d54d3ec2f16",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"updateCoursePicture",
+								"6805729e73612d54d3ec2f16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Course Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDUyMDMyODAsImV4cCI6MTc0NTIwNjg4MH0.jVlUQLsFpQe_BhiFlNVoZId1EGa3thp7FN36_znjyvg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\": \"IN6BV2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/updateCoursePassword/6805729e73612d54d3ec2f16",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"updateCoursePassword",
+								"6805729e73612d54d3ec2f16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDUyMDY1OTQsImV4cCI6MTc0NTIxMDE5NH0.0u7jMSokcL9Hi0D1ixb3-qukxLDSomK9e4UQkOl-zIY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/deleteCourse/6805b9c2338ae852f71bfce2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"deleteCourse",
+								"6805b9c2338ae852f71bfce2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDUyMDY1OTQsImV4cCI6MTc0NTIxMDE5NH0.0u7jMSokcL9Hi0D1ixb3-qukxLDSomK9e4UQkOl-zIY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Matematicas III\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/updateCourse/6805729e73612d54d3ec2f16",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"updateCourse",
+								"6805729e73612d54d3ec2f16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNGZlMzhlYjM2YTI3NGVhYzllMjgiLCJpYXQiOjE3NDUyOTg3MjYsImV4cCI6MTc0NTMwMjMyNn0.HiT62Qf_yLcGTmQq03S6KsI2HXgJF5F7n8duaHGnA04",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"IN6BV2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/assignCourse/68072f49a2a7e71009213beb",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"assignCourse",
+								"68072f49a2a7e71009213beb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Course Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDUyMDgzNDYsImV4cCI6MTc0NTIxMTk0Nn0.gfAzsq7VHRs7WlA5TWFFOaJ0TuPPFVaTmlW1f4WtKDA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/getCoursePassword/6805c43f16ce3eef949f5089",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"getCoursePassword",
+								"6805c43f16ce3eef949f5089"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDU0Njg4MzUsImV4cCI6MTc0NTQ3MjQzNX0.cSHy5ir8zg_SYT93fe752binq5IfS-1tq0Qtp_Avi-Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "document",
+									"type": "file",
+									"src": "/C:/Users/harol/Downloads/Educación Vial.docx"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "bimester",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/uploadDocument/6809be0001b587ed76b5b444",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"uploadDocument",
+								"6809be0001b587ed76b5b444"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get My Courses",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNGZlMzhlYjM2YTI3NGVhYzllMjgiLCJpYXQiOjE3NDUyOTg3MjYsImV4cCI6MTc0NTMwMjMyNn0.HiT62Qf_yLcGTmQq03S6KsI2HXgJF5F7n8duaHGnA04",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "search",
+								"value": "Matematicas III",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "sort",
+								"value": "A-Z",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "sort",
+								"value": "Z-A",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "sort",
+								"value": "oldest",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "sort",
+								"value": "newest",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/virtualLibrary/v1/course/getMyCourses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"getMyCourses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Documents By Bimester",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDU0Njg4MzUsImV4cCI6MTc0NTQ3MjQzNX0.cSHy5ir8zg_SYT93fe752binq5IfS-1tq0Qtp_Avi-Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bimester\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/getDocumentsByBimester/6809be0001b587ed76b5b444",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"getDocumentsByBimester",
+								"6809be0001b587ed76b5b444"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Courses By Teacher",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQyNDgxMGI3YmFiYjU2Y2E0NzM3NTMiLCJpYXQiOjE3NDkxNzQzNjksImV4cCI6MTc0OTE3Nzk2OX0.xWwfaQB1DOb-Nxz8G-0tJNOv-KC7LOeTLYQNWILylQ4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/getCoursesByTeacher",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"getCoursesByTeacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete File",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDU0NzI1OTQsImV4cCI6MTc0NTQ3NjE5NH0.mgeKenUF62-owrB4gkoZqIYCdS80mQT8wX6FqLmO_UI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fileName\": \"EducaciÃ³n Vial.docx\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/deleteDocument/6809be0001b587ed76b5b444",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"deleteDocument",
+								"6809be0001b587ed76b5b444"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Update Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDQ3ODk3ODcsImV4cCI6MTc0NDc5MzM4N30.wZZR0GdsUtJT0dP-TfsdEgwsL6W1EFDi8PjNMbup28E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"dhernandez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/user/updateProfile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"user",
+								"updateProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDQ3OTE0OTgsImV4cCI6MTc0NDc5NTA5OH0.SBTOZ62SFfrThr96mMQ2_meNh3yLGFbEN1gixVWb27A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\": \"wichoesgay123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/user/updatePassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"user",
+								"updatePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNmJhYTM4OTRkYTViMjY0OTg2ZjMiLCJpYXQiOjE3NDQ4NDAxODQsImV4cCI6MTc0NDg0Mzc4NH0.i9oEp-wGCLYEiszcXd33DA0sP9OQGRHckxv52K886no",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/user/getUsers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"user",
+								"getUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile Picture",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDQ3OTE0OTgsImV4cCI6MTc0NDc5NTA5OH0.SBTOZ62SFfrThr96mMQ2_meNh3yLGFbEN1gixVWb27A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/harol/Downloads/McQueen.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/user/updateProfilePicture",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"user",
+								"updateProfilePicture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNmJhYTM4OTRkYTViMjY0OTg2ZjMiLCJpYXQiOjE3NDQ4NDAxODQsImV4cCI6MTc0NDg0Mzc4NH0.i9oEp-wGCLYEiszcXd33DA0sP9OQGRHckxv52K886no",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/user/deleteUser/68002554de8854619b2e9ebe",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"user",
+								"deleteUser",
+								"68002554de8854619b2e9ebe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2ZmNTYyZTlmZGY4ZDZjZjZhMmVlNjgiLCJpYXQiOjE3NDUyOTY2MzAsImV4cCI6MTc0NTMwMDIzMH0.9HjyqYLRGE2tsS9PPkE7YUZfIbGYcdbuXgPOyPkOoA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/virtualLibrary/v1/user/getProfileInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"user",
+								"getProfileInfo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "Get Documents",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQ3YmYxZWNkMjU3OGMxODQ3ZGM4N2UiLCJpYXQiOjE3NDk1MzI1NDEsImV4cCI6MTc0OTU0MzM0MX0.3vH0AiKJjVgXn8wdM2-h2hcD-8VAnTAl0-c7fieqscQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/document/getDocuments",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"document",
+								"getDocuments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Document By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQyN2RiNjhkNTZjZGM0NzNmYTNhZTgiLCJpYXQiOjE3NDk1MzI5OTgsImV4cCI6MTc0OTU0Mzc5OH0.gkeIA3BxZJqq4dlqIOJcXJroDIYXGnLgoXkbjk_6SKQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/document/getDocumentById/6842879285dec37de2b66b8d/6847c085cd2578c1847dc894",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"document",
+								"getDocumentById",
+								"6842879285dec37de2b66b8d",
+								"6847c085cd2578c1847dc894"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQyN2RiNjhkNTZjZGM0NzNmYTNhZTgiLCJpYXQiOjE3NDk1MzI3OTcsImV4cCI6MTc0OTU0MzU5N30.dciQ1nMwf80yF7h2Q4aEplCsMFYOFH_qUlenxLV5810",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "document",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/Laboratorio #7.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/document/editCourseDocument/6842879285dec37de2b66b8d/6847c085cd2578c1847dc894",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"document",
+								"editCourseDocument",
+								"6842879285dec37de2b66b8d",
+								"6847c085cd2578c1847dc894"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQyN2RiNjhkNTZjZGM0NzNmYTNhZTgiLCJpYXQiOjE3NDk1MzI3OTcsImV4cCI6MTc0OTU0MzU5N30.dciQ1nMwf80yF7h2Q4aEplCsMFYOFH_qUlenxLV5810",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/document/deleteCourseDocument/60000842879285dec37de2b66b8d/6847c085cd2578c1847dc894",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"document",
+								"deleteCourseDocument",
+								"60000842879285dec37de2b66b8d",
+								"6847c085cd2578c1847dc894"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Recent Document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQyOTBiODg1ZGVjMzdkZTJiNjZiYzYiLCJpYXQiOjE3NDk1MzQwMjUsImV4cCI6MTc0OTU0NDgyNX0.lbyi2JloMhYSayhLUH0ggmf-eCxfFuLOAzvUfPiRKa4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/document/getRecentDocuments/6842879285dec37de2b66b8d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"document",
+								"getRecentDocuments",
+								"6842879285dec37de2b66b8d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Document",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODQyN2RiNjhkNTZjZGM0NzNmYTNhZTgiLCJpYXQiOjE3NDk1MzI3OTcsImV4cCI6MTc0OTU0MzU5N30.dciQ1nMwf80yF7h2Q4aEplCsMFYOFH_qUlenxLV5810",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "document",
+									"type": "file",
+									"src": "/C:/Users/PC/Downloads/20250606224905.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/virtualLibrary/v1/course/uploadDocument/6842879285dec37de2b66b8d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"virtualLibrary",
+								"v1",
+								"course",
+								"uploadDocument",
+								"6842879285dec37de2b66b8d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

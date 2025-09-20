@@ -1,0 +1,62 @@
+[{
+  "_id": {
+    "$oid": "6847bf1ecd2578c1847dc87e"
+  },
+  "name": "Admin",
+  "surname": "Library",
+  "username": "admin",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$csZS3wXGX3KMzB5/F9DZHA$DImmFRc0Ig4YVLoveunOnDc0WPsX4lj7Zgv/DfNFTHU",
+  "email": "adminplataform@kinal.org.gt",
+  "profilePicture": "adminProfile.png",
+  "role": "ADMIN_ROLE",
+  "degree": null,
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "68427db68d56cdc473fa3ae8"
+  },
+  "name": "Derian",
+  "surname": "Hernández",
+  "username": "RinTohsaka",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$NPeMkV0ymHGs0N1tfctklg$x+1R0/H8rtCYDMdovB+eHhx/71aOKVOaKR3KCAok0HQ",
+  "email": "dhernandez-2023346@kinal.org.gt",
+  "profilePicture": "defaultProfile.avif",
+  "phone": "40191129",
+  "role": "TEACHER_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "684290b885dec37de2b66bc6"
+  },
+  "name": "Javier",
+  "surname": "Apen",
+  "username": "japenm",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$jkuRU43puZBZiLknbDEi1A$3sYMcO7a+ecDLv7/EQtOYjBAp7rmFkWxFGTi3itZ8Tk",
+  "email": "japen-2023128@kinal.edu.gt",
+  "profilePicture": "defaultProfile.avif",
+  "phone": "22331155",
+  "role": "STUDENT_ROLE",
+  "degree": {
+    "$oid": "6847bf1ecd2578c1847dc883"
+  },
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "6842989485dec37de2b66c27"
+  },
+  "name": "Elkyn",
+  "surname": "samayoa",
+  "username": "esam",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$irN8Jy7tomc0DFlGQbjOow$ZyES+Hq10MW6fUQde4ww2P1l92ugdz9xbPbB+rr6O0k",
+  "email": "esam-2023222@kinal.edu.gt",
+  "profilePicture": "defaultProfile.avif",
+  "phone": "23125431",
+  "role": "STUDENT_ROLE",
+  "degree": {
+    "$oid": "68427d3a8d56cdc473fa3adb"
+  },
+  "status": true
+}]

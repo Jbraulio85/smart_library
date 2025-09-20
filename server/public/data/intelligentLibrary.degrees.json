@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "6847bf1ecd2578c1847dc87a"
+  },
+  "name": "Cuarto",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-06-10T05:14:06.251Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T05:14:06.251Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6847bf1ecd2578c1847dc881"
+  },
+  "name": "Quinto",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-06-10T05:14:06.326Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T05:14:06.326Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6847bf1ecd2578c1847dc883"
+  },
+  "name": "Sexto",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-06-10T05:14:06.328Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-10T05:14:06.328Z"
+  }
+}]
